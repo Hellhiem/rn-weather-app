@@ -1,0 +1,14 @@
+appId: org.reactjs.native.example.app
+---
+- launchApp
+- tapOn:
+    id: "weather-search-bar"
+- inputText: "Amsterdam"
+- hideKeyboard
+- tapOn:
+    id: "details-button-0"
+- assertVisible: "Amsterdam"
+- tapOn:
+    id: "back-button-weather-overview"
+- assertVisible:
+    id: "weather-search-bar"
